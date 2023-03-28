@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Diotays Event Registration</title><
+  <link href="text.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="event-registration">
+    <h1><p style="font-family:Goudy Stout">Event Registration</p></h1>
+    <form id="event-registration-form" method="POST" action="">
+      <!-- Form contents will go here -->
+      <fieldset>
+        <h3>Personal Information</h3>
+        <label for="lname">Last Name</label>
+        <input type="text" id="Last-Name" name="first-name" />
+        <label for="fname">First Name</label>
+        <input type="text" id="First-name" name="last-name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <label for="street">Region</label>
+        <input type="text" id="street" name="street" />
+        <label for="city">Province City</label>
+        <input type="text" id="Province City" name="Province City" />
+        <label for="state">Barangay</label>
+        <select id="states">
+            <option>-- Choose your Barangay --</option>
+          </select>
+        <label for="postal-code">Postal Code</label>
+        <input type="text" id="postal-code" name="postal-code" />
+      </fieldset>
+      <fieldset>
+        <h3>Additional Information</h3>
+		<label for="sex">Sex</label>
+		<input type="radio" name="gender" value="male"> Male
+		<input type="radio" name="gender" value="female"> Female
+		<br>
+		<br>
+        <label for="size">Shirt Size</label>
+        <div>
+          <input type="radio" name="size" value="xsmall">XS
+          <input type="radio" name="size" value="small">S
+          <input type="radio" name="size" value="medium">M
+          <input type="radio" name="size" value="large">L
+          <input type="radio" name="size" value="xlarge">XL
+          <br/>
+          <input type="checkbox" name="pickup"> I will be picking up my shirt on race day.
+
+        </div>
+      </fieldset>
+      <button type="button">Submit Form</button>
+  </div>
+</body>
+
+</html>
